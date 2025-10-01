@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  ai-med-api:
+    build: .
+    image: ai-medical-diagnosis:latest
+    environment:
+      - MODEL_CKPT=models/exp_hydra/best.pt
+      - CALIBRATION_JSON=results/evaluation_ext/calibration.json
+      - API_PORT=8000
+      - STREAMLIT_PORT=8501
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    restart: unless-stopped

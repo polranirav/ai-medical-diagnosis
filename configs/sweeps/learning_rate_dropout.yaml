@@ -1,0 +1,12 @@
+# Sweep configuration for Hydra + (optionally) W&B external orchestration
+# Usage (example manual iteration):
+#   for lr in 0.0005 0.001 0.002; do \
+#     for dr in 0.2 0.3 0.4; do \
+#       python -m src.training.run_experiment_hydra training.lr=$lr model.dropout=$dr wandb.enable=true wandb.run_name=lr${lr}_dr${dr}; \
+#     done; \
+#   done
+# If integrating W&B sweep, define a sweep YAML referencing these Hydra overrides.
+
+lr_values: [0.0005, 0.001, 0.002]
+dropout_values: [0.2, 0.3, 0.4]
+models: [resnet18, densenet121, efficientnet_b0]

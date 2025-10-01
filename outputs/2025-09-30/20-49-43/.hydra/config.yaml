@@ -1,0 +1,35 @@
+model:
+  name: resnet18
+  pretrained: true
+  freeze_backbone: false
+  dropout: 0.3
+  num_classes: 2
+data:
+  metadata_csv: notebooks/data/metadata/kaggle_pneumonia_metadata_clean.csv
+  backend: torchvision
+  batch_size: 32
+  img_size: 224
+  augment: true
+  normalize: true
+  balanced: true
+  drop_corrupted: true
+training:
+  epochs: 5
+  lr: 0.001
+  patience: 5
+  amp: true
+  grad_clip: null
+  monitor: val_acc
+  monitor_mode: max
+  save_last: true
+  optimizer: adamw
+  scheduler: cosine
+seed: 42
+output_dir: models/exp_hydra
+results_dir: results/evaluation
+wandb:
+  enable: false
+  project: ai-medical-diagnosis
+  run_name: null
+  tags: []
+  notes: null

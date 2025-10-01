@@ -1,0 +1,7 @@
+{
+  "average_precision": 0.9796527436769309,
+  "brier_score": 0.06937737353089848,
+  "calibrated": true,
+  "temperature": 1.5167810916900635,
+  "n_samples": 624
+}

@@ -1,0 +1,74 @@
+_wandb:
+    value:
+        cli_version: 0.22.1
+        e:
+            tbf061ghujjqou74kaoespiztfh9u34a:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 8
+                    memoryGb: 8
+                    name: Apple M3
+                    pcpuCores: 4
+                    ramTotalBytes: "8589934592"
+                    swapTotalBytes: "2147483648"
+                args:
+                    - --csv
+                    - kaggle_pneumonia_metadata_clean.csv
+                    - --pretrained
+                    - --balanced
+                    - --wandb
+                    - --output-dir
+                    - models/exp_resnet18_baseline
+                cpu_count: 8
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "245107195904"
+                        used: "205979172864"
+                email: nppolara@gmail.com
+                executable: /Users/niravpolara/PycharmProjects/ai-medical-diagnosis/.venv/bin/python
+                host: niravs-MacBook-Air.local
+                memory:
+                    total: "8589934592"
+                os: macOS-26.0.1-arm64-arm-64bit-Mach-O
+                program: -m src.training.run_experiment
+                python: CPython 3.13.7
+                root: /Users/niravpolara/PycharmProjects/ai-medical-diagnosis
+                startedAt: "2025-10-01T00:06:37.001923Z"
+                writerId: tbf061ghujjqou74kaoespiztfh9u34a
+        m: []
+        python_version: 3.13.7
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 80
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 80
+            "3":
+                - 1
+                - 16
+            "4": 3.13.7
+            "5": 0.22.1
+            "8":
+                - 2
+            "12": 0.22.1
+            "13": darwin-arm64
+amp:
+    value: false
+epochs:
+    value: 15
+lr:
+    value: 0.001
+monitor:
+    value: val_acc
+monitor_mode:
+    value: max
+patience:
+    value: 5

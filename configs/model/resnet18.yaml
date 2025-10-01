@@ -1,0 +1,8 @@
+# Model configuration
+name: resnet18
+pretrained: true
+freeze_backbone: false
+dropout: 0.3
+num_classes: 2
+use_focal: false
+class_weights: null

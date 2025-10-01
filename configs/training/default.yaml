@@ -1,0 +1,11 @@
+# Training hyperparameters
+epochs: 15
+lr: 0.001
+patience: 5
+amp: true
+grad_clip: null
+monitor: val_acc
+monitor_mode: max
+save_last: true
+optimizer: adamw
+scheduler: cosine

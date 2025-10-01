@@ -1,0 +1,8 @@
+# EfficientNet B0 configuration
+name: efficientnet_b0
+pretrained: true
+num_classes: 2
+freeze_backbone: false
+dropout: 0.2
+use_focal: false
+class_weights: null

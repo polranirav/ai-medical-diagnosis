@@ -1,0 +1,17 @@
+# Root experiment configuration
+# Compose sub-configs via defaults list
+
+defaults:
+  - model: resnet18
+  - data: kaggle_pneumonia
+  - training: default
+
+seed: 42
+output_dir: models/exp_hydra
+results_dir: results/evaluation
+wandb:
+  enable: false
+  project: ai-medical-diagnosis
+  run_name: null
+  tags: []
+  notes: null

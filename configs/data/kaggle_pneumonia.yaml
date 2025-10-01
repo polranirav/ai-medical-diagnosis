@@ -1,0 +1,9 @@
+# Data configuration
+metadata_csv: notebooks/data/metadata/kaggle_pneumonia_metadata_clean.csv
+backend: torchvision
+batch_size: 32
+img_size: 224
+augment: true
+normalize: true
+balanced: true
+drop_corrupted: true

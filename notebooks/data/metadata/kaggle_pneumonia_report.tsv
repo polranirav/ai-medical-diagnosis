@@ -1,0 +1,10 @@
+	0
+total_images	5856
+corrupted_images	0
+missing_splits	0
+missing_class_dirs	0
+class_counts_overall	{'NORMAL': 1583, 'PNEUMONIA': 4273}
+class_counts_per_split	{'NORMAL': {'test': 234, 'train': 1341, 'val': 8}, 'PNEUMONIA': {'test': 390, 'train': 3875, 'val': 8}}
+warnings	['Class imbalance: minority/majority ratio=0.370 < 0.4']
+aspect_outliers	60
+size_outliers	102
